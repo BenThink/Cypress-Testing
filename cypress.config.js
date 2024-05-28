@@ -19,7 +19,7 @@ async function setupNodeEvents(on, config) {
 
   // mochawesome -- this needs to be off when we run 'multiple-cucumber-html-reporter'
   // cus it overrides 'the before:run' hook and won't work
-  // mochaWesomeReporter(on);
+   mochaWesomeReporter(on);
 
 
   // SQL Server
@@ -106,7 +106,7 @@ export default defineConfig({
   projectId: 't73cid',
   defaultCommandTimeout: 6000,
 
-  // mochawesome
+   mochawesome
   // reporter: 'cypress-mochawesome-reporter',
 
   env: {
