@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import HomePage from '../pageObjects/HomePage.js';
-import ProductPage from '../pageObjects/ProductPage.js';
+import HomePage from '../../support/pageObjects/HomePage_PO.js';
+import ProductPage from '../../support/pageObjects/ProductPage_PO.js';
 
 
 describe('Framework', () => {
