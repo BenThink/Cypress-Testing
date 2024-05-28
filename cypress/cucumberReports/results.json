@@ -1,0 +1,166 @@
+[
+  {
+    "description": "    Application regression",
+    "elements": [
+      {
+        "description": "",
+        "id": "end-to-end-ecommerce-validation;ecommerce-products-delivery",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Ecommerce products delivery",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open Ecommerce page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1871000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add items to Cart",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Validate the total prices",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Select the country, submit and verify Thank You message",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5624000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "end-to-end-ecommerce-validation;filling-the-form-to-shop",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Filling the form to shop",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open Ecommerce page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 611000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "lidia",
+                      "Female"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I fill the form details",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Validate the form behavior",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Select the shop page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "end-to-end-ecommerce-validation",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "End to end Ecommerce validation",
+    "tags": [],
+    "uri": "cypress\\integration\\examples\\BDD\\ecommerce.feature"
+  }
+]
