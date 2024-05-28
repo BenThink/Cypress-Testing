@@ -25,7 +25,9 @@ describe('Waitting', () => {
     });
 
     it('cy.wait() - wait for a specific amount of time', () => {
-        cy.intercept('GET', '**/comments/*').as('getComment');
+        cy.intercept('GET', '**/comments/*').as('getComment1');
+        cy.intercept('GET', '**/comments/*').as('getComment2');
+
 
         // we have code that gets a comment when
         // the button is clicked in scripts.js
@@ -33,11 +35,11 @@ describe('Waitting', () => {
 
 
         // wait for GET comments/1
-        cy.wait('@getComment').its('response.statusCode').should('be.oneOf', [200, 304]);
+        cy.wait('@getComment1').its('response.statusCode').should('be.oneOf', [200, 304]);
 
 
         // same thing as above but much more testing
-        cy.wait('@getComment').then((res) => {
+        cy.wait('@getComment2').then((res) => {
             expect(res.response.statusCode).to.be.oneOf([200, 304]);
 
             // Assert specific properties and values in the response body
