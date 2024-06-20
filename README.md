@@ -1,6 +1,5 @@
 # Cypress-Testing
 
-i'm still working on this project!
 
 Cypress v13+ containing multiple test scenarios using custom commands, tasks, plugins, etc.
 
